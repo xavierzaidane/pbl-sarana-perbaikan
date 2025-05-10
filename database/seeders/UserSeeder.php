@@ -10,7 +10,7 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        $roles = ['Admin', 'Student', 'Lecturer', 'Staff', 'Technician', 'Infrastructure'];
+        $roles = ['Admin', 'Student', 'Lecturer', 'Staff', 'Technician'];
 
         foreach ($roles as $role) {
             DB::table('users')->insert([

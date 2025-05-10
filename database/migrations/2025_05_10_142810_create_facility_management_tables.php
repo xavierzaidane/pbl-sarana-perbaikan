@@ -14,7 +14,7 @@ class CreatefacilityManagementTables extends Migration
             $table->char('username', 100)->unique();
             $table->char('password', 100);
             $table->string('email', 200)->nullable();
-            $table->enum('role', ['Admin', 'Student', 'Lecturer', 'Staff', 'Technician', 'Infrastructure']);
+            $table->enum('role', ['Admin', 'Student', 'Lecturer', 'Staff', 'Technician']);
             $table->string('profile_picture', 200)->nullable();
             $table->rememberToken();
             $table->timestamps();

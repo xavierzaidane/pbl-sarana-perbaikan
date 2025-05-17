@@ -16,6 +16,16 @@ class User extends Authenticatable
     protected $table = 'users';
     protected $primaryKey = 'user_ID';  
 
+<<<<<<< HEAD
+=======
+    protected $table = 'users'; // explicitly set the table name
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var string[]
+     */
+>>>>>>> origin/master
     protected $fillable = [
         'name',
         'username',
@@ -34,4 +44,8 @@ class User extends Authenticatable
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
